@@ -15,7 +15,7 @@ global.$ = {
 	},
 	gulp : require('gulp'),
 	del :require('del'),
-	//pug : require('gulp-pug'),
+	
 	//sass : require('gulp-sass'),
 	//csso : require('gulp-csso'),
 	fs: require('fs'),////jsonfile
