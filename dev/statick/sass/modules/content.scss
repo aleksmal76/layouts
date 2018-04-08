@@ -1,0 +1,379 @@
+
+.programs{
+    
+  //border: 1px solid;
+  width: 100%;
+ min-width: 1920px;
+ 
+&__title  {
+    color: #000000;
+    @include mont('Montserrat', 30px, 700);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 115px;
+    letter-spacing: 1.5px;
+}
+    &__title:before,
+    &__title:after{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        //width: 100%;
+        height: 2px;
+        background-color: #000;
+        
+    }
+    &__title::before{
+        margin-left: -100%;
+        left: -10px;
+    }
+    &__title::after{
+        margin-right: -100%;
+        right:-10px;
+    }
+
+    .programs-block{
+        max-width: 1170px;
+    height: 721px;
+    margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    
+    &__basic{
+        display: flex;
+        flex-direction: column;
+        margin-top:83px;
+    }
+  
+    &__btn{
+        width: 270px;
+        height: 80px;
+        background-color: #ff1b22;
+        color: #ffffff;
+        @include mont('Montserrat', 14px, 700);
+       line-height: 36px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+     }   
+&--active{
+     color: #ffffff;
+     //display: none;
+     border:1px solid #fff;
+     padding: 22px 27px 21px 28px;
+     flex-direction: column;
+
+
+ }
+  
+    &__btn:hover{
+        height: 200px;
+        margin-top: -120px;
+       padding-bottom: 95px;
+    }
+ }
+ }
+ .coach{
+
+background-image: url('/statick/img/bg.jpg') ;
+min-width: 1920px;
+height: 1040px;
+width: 100%;
+margin-top: 60px;
+padding-top: 116px;
+
+     &__title{
+        color: #ffffff;
+        @include mont('Montserrat', 30px, 700);
+text-align: center;
+text-transform: uppercase;
+margin-top: 0px;
+margin-bottom: 100px; 
+     }
+     &__title:before,
+    &__title:after{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        //width: 100%;
+        height: 2px;
+        background-color: #fff;
+        
+    }
+    &__title::before{
+        margin-left: -100%;
+        left: -10px;
+    }
+    &__title::after{
+        margin-right: -100%;
+        right:-10px;
+    }
+    &__description-text{
+        display: flex;
+        flex-direction: column;
+        height: 99px;
+        margin-left: 28px;
+        max-width: 314px;
+        margin-top: 20px;
+    }
+    .coach-block{
+    display: flex;
+    max-width: 1200px;
+    height: 660px;
+flex-wrap: wrap;
+margin: 0 auto;
+}
+.coach-description{
+    display: flex;
+ width: 570px;
+height: 200px;
+border: 1px solid #eceae4;
+background-color: #ffffff;
+margin: 15px;
+
+
+
+&__pic img{
+    width: 200px;
+height: 199px;
+border: 5px solid #fff;
+
+}
+&__pic img:hover{
+    background-color: #0071bc; 
+    border:none;
+}
+&--photo{
+  width: 100%;
+    border: 10px solid #ffffff;
+background-color: #ffffff;
+
+ }
+
+ &__title{
+    width: 309px;
+   
+    @include mont('Montserrat', 14px, 700);
+   letter-spacing: 0.7px;
+line-height: 30px;
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 0;
+ }
+ &__title:hover{
+     color: #fff;
+ }
+ &__subtitle{
+    color: #cb1174;
+    @include mont('Montserrat', 12px, 400);
+   
+    letter-spacing: 0.6px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+    &__subtitle:hover{
+        color: #4f4c86;
+    
+ }
+ &__text{
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.65px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+ }  
+&__text:hover{
+    color: #fff;
+}
+&__social{
+    display: flex;
+    margin-top: 12px;
+
+    .fb{
+        @include sprite ($fb);
+        cursor: pointer;
+        margin-right: 11px;
+    }
+    .fb:hover{
+        @include sprite($hover-fb);
+         }
+    .tw{
+        @include sprite($tw);
+        margin-right: 11px;
+    }
+    .tw:hover{
+        @include sprite($hover-tw);
+    }
+.git{
+        @include sprite($git);
+    }
+    .git:hover{
+        @include sprite($git-hover);
+    }
+
+   }     
+
+ }
+ .coach-description:hover{
+    background-color: #0071bc;
+    cursor: pointer;
+
+}
+}
+
+.video-content{
+  display: flex;
+    min-width: 1920px;
+    width: 100%;
+    &__pic {
+         width: 100%;
+        max-width: 1170px;
+        height: 600px;
+        margin: 0  auto;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    &__play{
+       display: flex;
+        //display: block;
+        position: relative;
+        margin: 0 auto;
+        //top: -53%;
+        top: -315px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        width: 16px;
+        height: 20px;
+    }
+
+}
+.fitnes-post{
+    width: 100%;   
+    min-width: 1920px;
+height: 1180px;
+background: url('/statick/img/bg-post.jpg') ;
+
+    &__title{
+        color: #ffffff;
+        @include mont('Montserrat', 30px, 700);
+text-align: center;
+text-transform: uppercase;
+padding-top: 120px;
+margin-bottom: 100px; 
+     }
+     &__title:before,
+    &__title:after{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        //width: 100%;
+        height: 2px;
+        background-color: #fff;
+        
+    }
+    &__title::before{
+        margin-left: -100%;
+        left: -10px;
+    }
+    &__title::after{
+        margin-right: -100%;
+        right:-10px;
+    }
+&__block{
+    display: flex;
+    //flex-direction: column;
+    width: 100%;
+    max-width: 570px;
+height: 300px;
+background-color: #ffffff;
+margin-bottom: 30px;
+}
+&__text{
+    margin-left: 28px;
+    max-width: 304px;
+    width: 100%;
+}
+&__subtitle{
+    
+    @include mont('Montserrat', 14px, 700);
+   letter-spacing: 0.7px;
+line-height: 30px;
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 0;
+}
+&__data{
+    color: #cb1174;
+    @include mont('Montserrat', 12px, 400);
+   
+    letter-spacing: 0.6px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+&__desckript{
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.65px;
+    line-height: 26px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+&__social{
+   
+    display: flex;
+    margin-top: 27px;
+    max-width: 153px;
+    width: 100%;
+    justify-content: space-between;
+    //flex-direction: column;
+.perehod{
+    //position: relative;
+    @include sprite($perehod);
+     //margin-right: 11px;
+     //display: block;
+     }
+//.perehod:hover .tw.git.fb{
+   // @include sprite($perehod);
+    //display: block;
+//}
+.tw{
+    //position: absolute;
+    @include sprite($tw);
+    //margin-right: 11px;
+    //display: none;
+}
+.tw:hover{
+    @include sprite($tw_hover);
+
+}
+.git{
+    //position: absolute;
+    @include sprite($git);
+   // margin-right: 11px;
+    //display: none;
+}
+.fb{
+    //position: absolute;
+    @include sprite ($fb);
+    cursor: pointer;
+    //margin-right: 11px;
+    //display: none;
+
+}
+}
+}
+
+

@@ -1,44 +1,65 @@
+@import 'global/body.scss';
+@import '../sass/fonts.scss';
+@import '../sass/libs.scss';
+@import '../sass/_variables.scss';
+@import '../sass/mixins.scss';
+@import '../img/sprites/sprite.scss';
 
-@import '../sass/_fonts.scss';
-@import '../sass/_libs.scss';
-@import '../sass/variables.scss';
-@import '../fonts/Hamurz Free Version.ttf';
+@import '../../node_modules/node-normalize-scss/_normalize.scss';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
+
+
+
+@import '../sass/modules/footer.scss';
+
+//@import '../fonts/Hamurz Free Version.ttf';
 
 
 
 
  //Общие стили
-//@import 'comon_styles.scss'
+@import '../sass/styles.scss';
 
+html,
 body {
-    width: 100%;
-    margin: 0 auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-.container{
+section{
     position: relative;
-    width: 100%;
-    max-width: 1110px;
-    margin: 0 auto;
 }
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+//.container{
+    //position: relative;
+    //width: 100%;
+    //max-width: 1110px;
+    //margin: 0 auto;
+//}
+
 
 // Модули
 // Стили шапки 
-@import './modules/header.scss';
+@import '../sass/modules/header.scss';
 
+//Стили content
+
+ @import '../sass/modules/content.scss';
+ 
 //Стили футора/
-@import './modules/footer.scss';
-
- //Стили меню
-@import './modules/menu.scss';
 
 
- //СТРАНИЦЫ
- //Стили главной страницы
-@import './pages/index.scss';
+
+
 
  //ПРОЧЕЕ
  //Стили медиазапросов
-@import './media.scss';
+
 
 
 

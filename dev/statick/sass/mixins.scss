@@ -3,3 +3,26 @@
  //svg(class="icon icon-" + name + ' ' + mod)
   //use(xlink:href="/statick/img/svg/symbol/sprite.svg#" + name)
 //}
+
+//@each $ic in fb, tw, git
+//.icon-#{$ic}
+//+s(#{$ic})
+
+
+
+@mixin humurz ($familyhum, $size, $weight) {
+  font: {
+    family: $familyhum;
+    size: $size;
+    weight:$weight;
+  }
+}
+@mixin mont ($familymont, $size, $weight) {
+  font: {
+    family: $familymont;
+    size: $size;
+    weight: $weight;
+  }
+}
+
+

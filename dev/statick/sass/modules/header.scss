@@ -1,58 +1,209 @@
 
-
-header {
-    //display: flex;
-    max-height: 126px;
-    min-width: 1920px;
-		width: 100%;
-		background-color: #472424;
-   margin: 0 auto;
-   
-   }
-   
-    .container {
-        display: flex; 
-       
-				//align-items: center;
+ header {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1; //background-color: transparent;
  }
-   .header-logo{
-       margin-left: 30px;
-       &__link{
-           width: 15px;
-           height: 32px;
-           text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-           color: #ffffff;
-           font-family: "Hamurz Free Version";
-           font-size: 36px;
-           font-weight: 400;
-           line-height: 27px;
-           text-transform: uppercase;
-           text-decoration: none;
-       }
-   }
-   .header-nav{
-     display: flex;
-     width: 100%;
-      &__list{
-          display: flex;
-          list-style: none;
+
+.header-nav{
+width: 100%;
+ min-width: 1920px;
+     background: #000;
+     height: 121px;
+display: flex;
+justify-content: space-between;
+//margin-right: 155px;
+   opacity: 0.8;
+
+.header-logo{
+  margin-left: 100px;
+      margin-top: 40px;
+      display: flex;
+   
+  &__link{
+    
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    @include humurz ('Hamurz Free Version',36px, 400);
+    line-height: 27px;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+
+ &--none{
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    @include humurz ('Hamurz Free Version',28px, 400);
+    line-height: 27px;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    margin-top: 5px;
+  }
+  }
+ }
+ &__list{
+  justify-content: flex-end;
+  width: 100%;
+  min-width: 920px;
+         display: flex;
+         //max-width: 831px;
           flex-wrap: wrap;
-      } 
-      &__link{
+        align-items: center;     
+         margin-right: 41px;      
+}
+ &__link{
+         //margin-right: 100px; 
           width: 831px;
           height: 10px;
-          color: #ffffff;
+          color: #fff;
           font-family: 'Montserrat';
           font-size: 12px;
           font-weight: 400;
           line-height: 27px;
           text-transform: uppercase;
-        margin-left: 30px;
-        text-decoration: none;
-      }
-   } 
-    
-    
+        margin-left: 40px;
+       }
+      
 
+
+   .closed{
+     display: none;
+   }
+   .hamburger-menu {
+     align-self: center;
+     margin-right: 100px;
+   }
+
+   .hamburger-btn {
+     display: block;
+     font-size: 0;
+     background: none;
+     border: none;
+     width: 20px;
+     height: 12px;
+     position: relative;
+     cursor: pointer;
+     top: 0px;
+     right: 0px;
+   }
+
+   .hamburger-btn,
+   .hamburger-btn::before,
+   .hamburger-btn::after {
+     border-top: 2px solid #fff;
+     -webkit-transition: all .3s;
+     -moz-transition: all .3s;
+     transition: .3s;
+     cursor: pointer;
+   }
+
+   .hamburger-btn::before,
+   .hamburger-btn::after {
+     position: absolute;
+     content: "";
+     display: block;
+     left: 0;
+     right: 0;
+   }
+
+   .hamburger-btn::before {
+     top: 4px;
+   }
+
+   .hamburger-btn::after {
+     top: 10px;
+   }
+
+   .hamburger-btn.opened {
+     z-index: 2;
+     border-top-color: transparent;
+   }
+
+   .hamburger-btn.opened::after {
+     cursor: pointer;
+     transform: rotate(45deg);
+     top: 4px;
+   }
+
+   .hamburger-btn.opened::before {
+     cursor: pointer;
+     transform: rotate(-45deg);
+   }
+}
+  
     
-    
+.slider {
+  display: flex;
+  //position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 1920px;
+  max-height: 1000px;
+  //margin-bottom: 20px;
+  //&__bg {
+      //display: flex;
+  //}
+  &__title {
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      @include humurz ('Hamurz Free Version', 100px, 400);
+      line-height: 27px;
+      text-transform: uppercase;
+      letter-spacing: 12.5px;
+      position: absolute;
+      left: 375px;
+      top: 411px;
+  }
+  &__subtitle {
+      color: #ffffff;
+      @include mont('Montserrat', 48px, 700);
+      line-height: 27px;
+      text-transform: uppercase;
+      position: absolute;
+      left: 375px;
+      top:578px;
+  }
+  &__text {
+      width: 769px;
+      height: 67px;
+      color: #efefef;
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-style: italic;
+      line-height: 48px;
+      position: absolute;
+      left: 374px;
+      top:650px;
+  }
+  img {
+      //top: 0;
+      width: 100%;
+      overflow: hidden;
+      //position: absolute;
+     position: relative;
+      max-width: 100%;
+      display: none; //top: -121px;
+      height: 1000px;
+  }
+  img.active {
+      display: block;
+  }
+  &__btn {
+      @include mont('Montserrat', 12px, 700);
+      border: 1px solid #ffffff;
+      letter-spacing: 1.5px;
+      margin-left: 374px;
+      cursor: pointer;
+      top: -168px;
+      //position: absolute;
+      position: relative;
+      background: none;
+      color: #ffffff;
+      line-height: 27px;
+      text-transform: uppercase;
+      padding: 12px 39px 12px 39px;
+  }
+  
+}
