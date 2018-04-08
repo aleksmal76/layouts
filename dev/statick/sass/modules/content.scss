@@ -255,7 +255,7 @@ margin-bottom: 0;
     }
 
 }
-.fitnes-post{
+.fitnes{
     width: 100%;   
     min-width: 1920px;
 height: 1180px;
@@ -288,19 +288,48 @@ margin-bottom: 100px;
         margin-right: -100%;
         right:-10px;
     }
-&__block{
+    .fitnes-post{
+height: 630px;
+margin: 0 auto;
+max-width: 1170px;
+  display: flex;
+   flex-wrap: wrap;
+&__big{
+    margin-right: 30px;
+}
+
+&__block {
     display: flex;
+   //flex-wrap: nowrap;
     //flex-direction: column;
     width: 100%;
     max-width: 570px;
 height: 300px;
 background-color: #ffffff;
 margin-bottom: 30px;
+//margin-bottom: 0;
+margin-right: 30px;
+
+&--big{
+    
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    height: 630px;
+    background-color: #ffffff;
 }
+}
+
+
+
 &__text{
     margin-left: 28px;
     max-width: 304px;
     width: 100%;
+    &--bg{
+        width: 511px;
+        margin-left: 28px;
+    }
 }
 &__subtitle{
     
@@ -308,7 +337,7 @@ margin-bottom: 30px;
    letter-spacing: 0.7px;
 line-height: 30px;
 text-transform: uppercase;
-margin-top: 0;
+margin-top: 20px;
 margin-bottom: 0;
 }
 &__data{
@@ -328,13 +357,13 @@ margin-bottom: 0;
     font-weight: 400;
     letter-spacing: 0.65px;
     line-height: 26px;
-    margin-top: 40px;
+    margin-top: 18px;
     margin-bottom: 0;
 }
 &__social{
    
     display: flex;
-    margin-top: 27px;
+    margin-top: 29px;
     max-width: 153px;
     width: 100%;
     justify-content: space-between;
@@ -371,9 +400,120 @@ margin-bottom: 0;
     cursor: pointer;
     //margin-right: 11px;
     //display: none;
+ }
 
+}
+&__btn{
+    margin: 0 auto; 
+    background: none;
+    color: #ffffff;
+    @include mont('Montserrat', 12px, 700);
+border: none;
+line-height: 36px;
+text-transform: uppercase;
+    cursor: pointer;
+    //padding: 15px 10px 15px 10px;
+    width: 70px;
+height: 50px;
+border: 1px solid #eceae4;
+margin-top: 90px;
+}
+}
+
+}
+.testimonials{
+    min-width: 1920px;
+
+   
+    margin-top: 114px;
+.testimonials-block{
+     margin: 0 auto;
+     max-width: 1190px;
+    height: 936px;
+        border: 1px solid;
+    &__title{
+        color: #000;
+        @include mont('Montserrat', 30px, 700);
+text-align: center;
+text-transform: uppercase;
+//padding-top: 120px;
+margin-bottom: 108px; 
+margin-top: 0;
+     }
+     &__title:before,
+    &__title:after{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        //width: 100%;
+        height: 2px;
+        background-color: #000;
+        
+    }
+    &__title::before{
+        margin-left: -100%;
+        left: -10px;
+    }
+    &__title::after{
+        margin-right: -100%;
+        right:-10px;
+    }
+    
+    
+   
+&__pic{
+   margin-left: 462px;
+    //text-align: center;
+}
+.testimonials-slider{
+    width: 1170px;
+height: 285px;
+background-color: #0071bc;
+margin-left: 20px;
+margin-top: -90px;
+position: absolute;
+&__block{
+    width: 1154px;
+    height: 131px;
+}
+&__title{
+    font-family: 'Bukhari Script Alternates';
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 0.9px;
+line-height: 30px;
+color: #fff;
+margin-left: 52px;
+
+
+
+
+
+
+
+
+
+
+
+}
+&__data{
+    @include mont('Montserrat', 12px, 400);
+color: #fff;
+letter-spacing: 0.6px;
+line-height: 30px;
+text-transform: uppercase;
+margin-left: 50px;
+}
+&__text{
+   margin-left: 50px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: italic; 
+    margin-right: 10px;
 }
 }
 }
 
-
+}
