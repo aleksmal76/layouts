@@ -51,13 +51,14 @@
 
 
 <section class="slider">
-<div class="slider__bg " >
+<div class="slider__bg "  >
+    <div class="slider__slides" id="content">
     <div class=" slider__slide">
     <h1 class="slider__title">hugma</h1>
     <h2 class="slider__subtitle">Crossfit Studio</h2>
     <p class="slider__text">Below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are .....</p>
     
-    <img  src ="./statick/img/layer-513.jpg" class="active"  alt="img">
+    <img  src ="./statick/img/layer-513.jpg"   alt="img" class="shown">
         
         </div>
 <div class=" slider__slide">
@@ -72,18 +73,17 @@
     <p class="slider__text">Below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are .....</p>
     <img src="./statick/img/layer-511.jpg"   alt="img">
 </div>
-<div class=" slider__slide">
-    <h1 class="slider__title">hugma</h1>
-    <h2 class="slider__subtitle">Crossfit Studio</h2>
-    <p class="slider__text">Below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are .....</p>
+<div class="slider__slide">
+<h1 class="slider__title">hugma</h1>
+<h2 class="slider__subtitle">Crossfit Studio</h2>
+<p class="slider__text">Below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are .....</p>
     <img src="./statick/img/layer-505.jpg"   alt="img">
 </div>
 <div class="slider__control">
-    <!--<button type="button" class="slick">go </button>-->
-    <button class="slider__btn" id="btn">go</button>
+    <button class="slider__btn" id="btn" >go</button>
 </div>
 </div>
-
+</div>
       </section>  
    
     <section class="programs">
@@ -92,25 +92,35 @@
         <div class="programs-block">
             <div class="programs-block__basic">
                 <img src="./statick/img/basic.png" alt="basic" class="programs-block__pic">
-                <button class="programs-block__btn">basic crossfit</button>
+                <div class="programs-btn">
+                <button class="programs-btn__block">basic crossfit</button>
             </div>
-       
+       </div>
       
             <div class="programs-block__basic">
                 <img src="./statick/img/personal.png" alt="basic" class="programs-block__pic">
-                <button class="programs-block__btn">personal training</button>
+                <div class="programs-btn">
+                <button class="programs-btn__block">personal training</button>
+                </div>
             </div>
        
 
     <div class="programs-block__basic">
         <img src="./statick/img/yoga.png" alt="basic" class="programs-block__pic">
-<button class="programs-block__btn">yoga classes</button>
+<div class="programs-btn">
+<button class="programs-btn__block">yoga classes</button>
+</div>
     </div>
 
 
     <div class="programs-block__basic">
         <img src="./statick/img/fitnes.png" alt="basic" class="programs-block__pic">
-<button class="programs-block__btn">fitness studıo<a href="#" class="programs-block__btn--active">go</a></button>
+<div class="programs-btn">
+<button class="programs-btn__block">fitness studıo
+    
+</button>
+<button  class="programs-btn__block--active">go</button>
+</div>
 </div>
 </div>
     </section>
@@ -327,20 +337,107 @@
 <h4 class="testimonials-slider__title">Says</h4>
 <h5 class="testimonials-slider__data">12 apr, 2016</h5>
 <div class="testimonials-slider__text">
-    <span>There is a basic, first situation when it’s not a good idea to do intensity prescriptions They simply tweak them to be fit for different skills and experience levels. But we are sticking to quite a different plan. We put our focus on intensity (actual weights) prescriptions for any specific powerlifter.</span>
+    <span class="shown">There is a basic, first situation when it’s not a good idea to do intensity prescriptions They simply tweak them to be fit for different skills and experience levels. But we are sticking to quite a different plan. We put our focus on intensity (actual weights) prescriptions for any specific powerlifter.</span>
+</div>
+<div class="testimonials-slider__text">
+    <span >There is a basic, first situation when it’s not a good idea to do intensity prescriptions They simply tweak them to be
+        fit for different skills and experience levels. But we are sticking to quite a different plan. We put our focus on
+        </span>
+
+
 </div>
 </div>
+
+<div class="testimonials-slider__control">
+    <button class=" testimonials-slider__btn--left btn-prev " ><img src="./statick/img/arrow-left.png" alt="arrow"></button>
+    <button class="testimonials-slider__btn--right btn-next" ><img src="./statick/img/arrow-right.png" alt="arrow"></button>
+</div>
+
 </div>
 </div>
 
 
 </section>
+<div class="block-instagram">
+        <a href="" class="intagram-icon block-instagram__pic"></a>
+<div class="block-instagram__photo">
+        <img src="./statick/img/girl.jpg" alt="girl">
+        <div class="block-instagram__social">
+            <a href="#" class="like block-instagram__social--like"></a>
+            <a href="#" class="inst block-instagram__social--inst"></a>
+        </div>
+    </div>
+    <div class="block-instagram__photo">
+        <img src="./statick/img/men.jpg" alt="girl">
+        <div class="block-instagram__social">
+            <a href="#" class="like block-instagram__social--like"></a>
+            <a href="#" class="inst block-instagram__social--inst"></a>
+        </div>
+    </div>
+    <div class="block-instagram__photo">
+        <img src="./statick/img/mens.jpg" alt="girl">
+        <div class="block-instagram__social">
+            <a href="#" class="like block-instagram__social--like"></a>
+            <a href="#" class="inst block-instagram__social--inst"></a>
+        </div>
+    </div>
+    <div class="block-instagram__photo">
+        <img src="./statick/img/shtanga.jpg" alt="girl">
+        <div class="block-instagram__social">
+            <a href="#" class="like block-instagram__social--like"></a>
+            <a href="#" class="inst block-instagram__social--inst"></a>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+   <div class="footer-block">
+       <div class="footer-block__title">
+           <h4>hugma</h4>
+       </div>
+       <div class="footer-block__text">
+           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <span> McClintock, a Latin</span> professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,</p>
+       </div>
+       <div class="footer-social">
+       <div class="footer-social__title">
+           <h4>follow us</h4>
+       </div>
+       <div class="footer-social__icon">
+<img src="./statick/img/sprites/social-icon.png" alt="">
+       </div>
+   </div>
+   </div>
+   <div class="footer-block footer-block--twitter">
+<!--<div class="footer-social"></div>-->
+    <div class="footer-block__title"><h4>twitter messages</h4></div>
 
+<div class="footer-block__text--twitter">
+    <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the  http://link.sys
+        </p>
+        <a href="">3 day ago</a>
+        <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the http://link.sys
+        </p>
+        <a href="">3 day ago</a>
+</div>
+</div>
+<div class="footer-block footer-block--open">
+    <div class="footer-block__title">
+        <h4>we are open</h4>
+    </div>
+    <div class="footer-block__text--open">
+        <span>Mon-Thu: 9:30 - 21:00</span>
+        <span>Fri: 6:00 - 21:00</span>
+        <span>Sat: 10:00 - 15:00</span>
+
+    </div>
+</div>
+
+</footer>
+<div class="footer-copiright">
+    <button class="up"><a href=""><img src="./statick/img/up-icon.png" alt=""></a></button>
+    <div class="footer-copiright__text"><span>Copyright @ All Rights Reserved</span></div>
+</div>
     
-    <script src="/statick/js/libs.min.js"></script>
-    <script src="/statick/js/main.js"></script>
-<script src="/statick/js/slider.js"></script>
-<!--<script src="./node_modules/svg4everybody/dist/svg4everybody.js"></script>-->
-<!--<script>svg4everybody();</script>-->
+<script src="/statick/js/script.min.js"></script>
+
 </body>
 </html>

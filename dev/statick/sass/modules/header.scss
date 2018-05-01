@@ -177,18 +177,30 @@ justify-content: space-between;
       left: 374px;
       top:650px;
   }
-  img {
-      //top: 0;
-      width: 100%;
-      overflow: hidden;
-      //position: absolute;
-     position: relative;
-      max-width: 100%;
-      display: none; //top: -121px;
-      height: 1000px;
+  &__slides{
+    position: relative;
+    height: 1000px;
+    display: flex;
+    }
+  &__slide{
+    position: relative;
+    height: 1000px;
+
+     img.shown{
+       //display: none;
+    display: block;
   }
-  img.active {
-      display: block;
+}
+   img{
+     
+    display: none;
+  left: 0;
+ 
+  }
+ 
+  
+  &__control{
+    position: absolute;
   }
   &__btn {
       @include mont('Montserrat', 12px, 700);
@@ -196,7 +208,8 @@ justify-content: space-between;
       letter-spacing: 1.5px;
       margin-left: 374px;
       cursor: pointer;
-      top: -168px;
+      margin-top: 800px;
+      //top: -168px;
       //position: absolute;
       position: relative;
       background: none;
@@ -204,6 +217,7 @@ justify-content: space-between;
       line-height: 27px;
       text-transform: uppercase;
       padding: 12px 39px 12px 39px;
+      z-index: 1;
   }
   
 }

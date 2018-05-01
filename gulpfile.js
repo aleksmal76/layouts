@@ -30,12 +30,12 @@ $.patch.task.forEach(function (taskPatch) {
 
  $.gulp.task('dev', $.gulp.series(
 	 'clean',
-	 $.gulp.parallel('sass', 'html', 'js:copy', 'sprite','svg', 'img:dev', 'fonts', 'scripts:dev','scripts')
+	 $.gulp.parallel('sass', 'html', 'sprite', 'svg', 'img:dev', 'fonts', 'scripts')//'js:copy',
 ));
 
  $.gulp.task('build', $.gulp.series(
 'clean',
-	 $.gulp.parallel('sass', 'html', 'js:copy', 'sprite','svg', 'img:build', 'fonts', 'scripts:build','scripts')
+	 $.gulp.parallel('sass', 'html',  'sprite','svg', 'img:build', 'fonts', 'scripts')
  ));
 
 $.gulp.task('default', $.gulp.series(//

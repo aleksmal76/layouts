@@ -1,0 +1,139 @@
+.footer{
+    width: 100%;
+    min-width: 1920px;
+height: 484px;
+background-color: #30394d;
+display: flex;
+//flex-direction: column;
+.footer-block{
+    //width: 100%;
+  
+margin-left: 375px;
+padding-top: 34px;
+&__title{
+    
+    color: #ffffff;
+    @include mont('Montserrat', 16px, 400);
+
+line-height: 30px;
+text-transform: uppercase;
+min-width: 63px;
+}
+&__title::after{
+    content: '';
+   border-bottom: 4px solid #5c8bcb;
+width: 42px;
+position: absolute; 
+}
+&__text{
+    width: 430px;
+height: 132px;
+color: #cce2ff;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 30px;
+margin-top: 46px;
+}
+&__text span{
+    color: #fff;
+
+}
+}
+.footer-social{
+    width: 133px;
+    height: 86px;
+
+&__title{
+    //width: 94px;
+
+@include mont('Montserrat', 16px, 400);
+color: #ffffff;
+
+line-height: 30px;
+text-transform: uppercase;
+margin-top: 40px;
+}
+&__title::after{
+    content: '';
+   border-bottom: 4px solid #5c8bcb;
+width: 42px;
+position: absolute; 
+}
+&__icon img{
+    margin-top: 32px;
+    cursor: pointer;
+}
+}
+.footer-block--twitter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 70px;
+    max-width: 456px;
+height: 263px;
+//border: 1px solid;
+}
+.footer-block__text--twitter p {
+    width: 455px;
+    color: #cce2ff;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 30px;
+margin-top: 24px;
+margin-bottom: 5px;
+}
+.footer-block__text--twitter a{
+    color: #00aeff;
+}
+.footer-block--open{
+    margin-left: 44px;
+}
+.footer-block__text--open {
+    display: flex;
+    flex-direction: column;
+    height: 71px;
+    justify-content:space-around;
+    margin-top: 55px;
+}
+.footer-block__text--open span{
+    //margin-top: 24px;
+    color: #cce2ff;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 30px;
+}
+}
+.footer-copiright{
+display: flex;
+flex-direction: column;
+    width: 100%;
+    min-width: 1920px;
+height: 120px;
+background-color: #0071bc;
+}
+.up{
+   cursor: pointer; 
+    width: 40px;
+height: 40px;
+background-color: #0071bc;
+border: none;
+margin: 0 auto;
+display: inline-block;
+position: relative;
+top: -20px;
+}
+.footer-copiright__text span{
+   
+    color: #e5e5e5;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 40px;
+//padding-top: 40px;
+justify-content: center;
+display: flex;
+margin: 0 auto;
+}

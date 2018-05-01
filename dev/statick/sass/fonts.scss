@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,400');
-@import '../fonts/Hamurz Free Version.ttf';
+
 @import '../fonts/Bukhari Script Alternates.ttf';
-//@import '../fonts/Hamurz Free Version.otf';
+
+
+
+
+@font-face {
+    font-family: 'HamurzFreeVersion';
+    src: url('fonts/HamurzFreeVersion.eot');
+    src: url('fonts/HamurzFreeVersion.eot') format('embedded-opentype'),
+         url('fonts/HamurzFreeVersion.woff2') format('woff2'),
+         url('fonts/HamurzFreeVersion.woff') format('woff'),
+         url('fonts/HamurzFreeVersion.ttf') format('truetype'),
+         url('fonts/HamurzFreeVersion.svg#HamurzFreeVersion') format('svg');
+}
